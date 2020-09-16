@@ -1,0 +1,11 @@
+# Server path and port
+server:
+  servlet:
+    context-path: /fibonacci-calculator
+  port: 8081
+
+# Cucumber  
+cucumber:
+  api:
+    java:
+      ObjectFactory: cucumber.runtime.java.spring.CitrusSpringObjectFactory
