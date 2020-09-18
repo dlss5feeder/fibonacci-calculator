@@ -17,12 +17,17 @@
 ### URL GIT
 https://github.com/ignacio-herrero-glago/fibonacci-calculator.git
 
+### URL DOCKER
+docker pull ignacioherrero/fibonacci-calculator:latest
+
 ### URL Swagger
 http://localhost:8081/fibonacci-calculator/swagger-ui.html
 
 
 ### Arranque del microservicio
-  * Clonar el repositorio indicado arriba
-  * En la ruta donde se ha clonado, ejecutar el comando "docker build -t ignacio-herrero-glago/fibonacci-calculator:1.0.0 ."
-  * A continuación, arrancar el microservicio con "docker run --rm -p 8081:8081 --name fibonacci-calculator ignacio-herrero-glago/fibonacci-calculator:1.0.0"
+  * Para ver el código fuente: clonar el repositorio indicado arriba (URL GIT)
+  * Para ejecutar el código fuente:
+  *    A). Bien en la ruta donde se ha clonado, ejecutar el comando "docker build -t ignacio-herrero-glago/fibonacci-calculator ."
+  *    B). Descargar directamente la imagen docker (URL DOCKER)
+  * A continuación, arrancar el microservicio con "docker run --rm -p 8081:8081 --name fibonacci-calculator ignacio-herrero-glago/fibonacci-calculator"
   * Acceder a la URL del Swagger indicada arriba
