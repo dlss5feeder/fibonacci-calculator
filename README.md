@@ -23,7 +23,6 @@ http://localhost:8081/fibonacci-calculator/swagger-ui.html
 
 ### Arranque del microservicio
   * Clonar el repositorio indicado arriba
-  * En la ruta donde se ha clonado, ejecutar el comando "mvn install"
-  * A continuación, generar la imagen docker con el comando "mvn docker:build"
-  * A continuación, arrancar el microservicio con "docker run --rm -p 8081:8081 ignacio-herrero-glago/fibonacci-calculator:1.0.0"
+  * En la ruta donde se ha clonado, ejecutar el comando "docker build -t ignacio-herrero-glago/fibonacci-calculator:1.0.0 ."
+  * A continuación, arrancar el microservicio con "docker run --rm -p 8081:8081 --name fibonacci-calculator ignacio-herrero-glago/fibonacci-calculator:1.0.0"
   * Acceder a la URL del Swagger indicada arriba
